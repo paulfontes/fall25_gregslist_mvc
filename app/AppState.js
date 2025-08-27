@@ -5,9 +5,6 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
 
-  /**@type {import('./models/Example.js').Example[]} */
-  examples = []
-
   houses = [
     new House({
     year: '1974',
@@ -18,7 +15,38 @@ class ObservableAppState extends EventEmitter {
     description: 'Newly renovated mid-century modern home',
     imgUrl: "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
-    })
+    }),
+
+    new House({
+    year: '2020',
+    bedrooms: 4,
+    bathrooms: 3,
+    sqft: 1600,
+    price: 550000,
+    description: 'Newly Built Modern Home!',
+    imgUrl: "https://plus.unsplash.com/premium_photo-1661915661139-5b6a4e4a6fcc?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    }),
+    new House({
+    year: '1955',
+    bedrooms: 1,
+    bathrooms: 1,
+    sqft: 100,
+    price: 5000,
+    description: 'Old Small red house in remote area!',
+    imgUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    }),
+    new House({
+    year: '1985',
+    bedrooms: 3,
+    bathrooms: 2,
+    sqft: 1000,
+    price: 275000,
+    description: 'Cozy mid-century Cabin',
+    imgUrl: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    }),
   ]
 
 

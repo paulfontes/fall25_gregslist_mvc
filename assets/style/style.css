@@ -36,7 +36,13 @@ label {
   border: inset 10px black;
 }
 
+.card {
+  height: ;
+  
+}
+
 .house-card-img {
   width: 100%;
-  height: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }

@@ -14,8 +14,9 @@ export class House {
 
     get housingTemplate() {
         return`
-        <div class="col-6 card">
+        <div class="col-5 card">
               <img  src="${this.imgUrl}" class="card-img-top house-card-img"  alt="">
+              <hr>
               <div class="card-body">
                 <h5 class="card-title">${this.description}</h5>
                 <p class="card-text">This house was built in ${this.year}. It has ${this.bedrooms} bedrooms and ${this.bathrooms} bathrooms. Notably it is ${this.sqft} sqft and for the low price of ${this.price} it can be yours.  </p>
