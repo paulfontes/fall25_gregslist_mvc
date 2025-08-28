@@ -19,10 +19,22 @@ export class House {
               <hr>
               <div class="card-body">
                 <h5 class="card-title">${this.description}</h5>
-                <p class="card-text">This house was built in ${this.year}. It has ${this.bedrooms} bedrooms and ${this.bathrooms} bathrooms. Notably it is ${this.sqft} sqft and for the low price of ${this.price} it can be yours.  </p>
-              </div>
-            </div>
-        
+                <span><b>Built: </b>${this.year}</span>
+                <span><b>Bedrooms: </b>${this.bedrooms}</span>
+                <span><b>Bathrooms: </b>${this.bathrooms}</span>
+                <span><b>Built: </b>${this.year}</span>
+                <br>
+                <span><b>Square Feet: </b>${this.sqft}'</span>
+                <br>
+                <span><b>Price: </b>${this.priceAsUSD}</span>
+                </div>
+                </div>
+                <div class="text-end">
+                <button type="button" class="btn btn-primary">Delete</button>
+                </div>
         `
+    }
+    get priceAsUSD(){
+        return '$' + this.price.toLocaleString()
     }
 }
